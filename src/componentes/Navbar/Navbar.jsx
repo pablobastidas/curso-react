@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CartWidget from "../CartWidget/CartWidget";
 
 function Navbar(){
 
@@ -25,7 +26,7 @@ function Navbar(){
                     <li><a href="#" className="text-white">Inicio</a></li>
                     <li><a href="#" className="text-white">Productos</a></li>
                     <li><a href="#" className="text-white">Contacto</a></li>
-                    <li><a href="#" className="text-white bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded"><i className="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><CartWidget/></li>
                 </ul>
 
                 {/* Open Menú */}
@@ -36,7 +37,7 @@ function Navbar(){
                         <li className="py-2"><a href="#" className="text-white">Inicio</a></li>
                         <li className="py-2"><a href="#" className="text-white">Productos</a></li>
                         <li className="py-2"><a href="#" className="text-white">Contacto</a></li>
-                        <li className="py-2"><a href="#" className="text-white bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded"><i className="fa-solid fa-cart-shopping"></i></a></li>
+                        <li className="py-2"><CartWidget/></li>
                     </ul>
                 ) : null}
             </div>
